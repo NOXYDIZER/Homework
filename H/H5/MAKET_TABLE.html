@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAKET_TABLE</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            font-family: sans-serif;
+        }
+        thead, tfoot {
+            background-color: #add8e6;
+            color: #0000ff;
+            font-size: 25px;
+            text-align: center;
+        }
+        .menu {
+            background-color: #f0e68c;
+            width: 165px;
+            padding: 10px;
+        }
+        .football-image {
+            float: left;
+            padding: 0px 20px 10px 0px;
+        }
+        .main-content {
+            background-image: url(./ball4.png);
+            background-position: right;
+            background-repeat: repeat-y;
+            background-size: 50px;
+            padding: 20px;
+        }
+        .title {
+            text-align: center;
+            font-size: 20px;
+            margin-top: 15px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        thead tr td {
+            padding: 10px;
+        }
+        tfoot tr td {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <td colspan="2">
+                    ПРИВЕТ УЧАСТНИКАМ СОРЕВНОВАНИЙ!
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="menu">
+                    <strong>Виды спорта:</strong>
+                    <ul>
+                        <li><a href="#">Конькобежный спорт</a></li>
+                        <li><a href="#">Биатлон</a></li>
+                        <li><a href="#">Футбол</a></li>
+                        <li><a href="#">Стрельба из лука</a></li>
+                        <li><a href="#">Прыжки в длину</a></li>
+                        <li><a href="#">Прыжки в высоту</a></li>
+                        <li><a href="#">Фигурное катание</a></li>
+                        <li><a href="#">Синхронное плавание</a></li>
+                        <li><a href="#">Шахматы</a></li>
+                        <li><a href="#">Шашки</a></li>
+                    </ul>
+                </td>
+                <td class="main-content">
+                    <p class="title"><strong>ФУТБОЛ</strong></p>
+                    <img src="football.jpg" class="football-image">
+                    <p>
+                        Футбол &mdash; командный вид спорта, в котором целью является забить мяч в ворота соперника ногами или другими 
+                        частями тела (кроме рук) большее количество раз, чем команда соперника. В настоящее время самый популярный и 
+                        массовый вид спорта в мире.
+                    </p>
+                    Есть 17 официальных правил игры, каждое из которых содержит список оговорок и руководящих принципов. Эти правила 
+                    предназначены для применения на всех уровнях футбола, хотя есть некоторые изменения для таких групп, как юниоры, 
+                    взрослые, женщины и люди с ограниченными физическими возможностями. Законы очень часто формулировались в общих 
+                    чертах, которые позволяют упростить их применения в зависимости от характера игры. Правила игры публикуются в ФИФА, 
+                    но поддерживаются Международным советом футбольных ассоциаций (IFAB).
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">
+                    ГЛАВНОЕ НЕ ПОБЕДА, А УЧАСТИЕ!
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>

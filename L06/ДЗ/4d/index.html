@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<style>
+		html, body{
+			margin: 0;
+			padding: 0;
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			color: #2b2b2b;
+		}
+
+		.container{
+			margin: 0 auto;
+			/*max-width: 600px;*/
+			width:800px;
+			padding:0 15px;
+		}
+
+		a{
+			color: #0b6fc5;
+		}
+		a:hover{
+			color: #0f7fe0;
+		}
+
+		.nav-link{
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			padding: 5px 10px;
+			font-weight: bold;
+			
+			font-size: 13px;;
+		}
+
+		main{
+			line-height:160%;
+		}
+
+		.table-introduction {
+		
+			border-collapse: collapse;
+			width: 100%;
+		}
+
+		.table-introduction th,
+		.table-introduction td{
+			border: 1px solid #ccc;
+			padding: 10px 15px;
+			text-align: left;
+		}
+
+		.table-introduction th{
+			font-weight: bold;
+		}
+
+		.table-sample{
+			border-collapse: collapse;
+			width:70%;
+			min-width: 330px;
+			margin:0 auto;
+		}
+
+
+
+		.table-sample td:first-child{
+			border-right: 1px solid #535353;
+		}
+
+		.table-sample th,
+		.table-sample td{
+			max-width: 50%;
+			width: 50%;
+			border: 1px solid #ccc;
+			padding: 10px 15px;
+		}
+
+		.table-sample th {
+			background-color: #bec0bf;
+			border-bottom: 1px solid #535353;
+		}
+
+		.table-sample td:first-child{
+			background-color: #e2e2e2
+		}
+
+		.table-sample td{
+			text-align: right;
+		}
+
+		.table-sample th,
+		.table-sample td:first-child{
+			text-align: left;
+			font-weight: bold;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<h1>HTML table basics</h1>
+
+		<nav>
+			<a class="nav-link" href="#">
+				Overview: Tables</a>
+		</nav>
+
+		<aside></aside>
+		<main>
+			<aside></aside>
+			<p>This article gets you started with HTML tables, covering the very basics such as rows, cells, headings,
+				making cells
+				span multiple columns and rows, and how to group together all the cells in a column for styling
+				purposes.
+			</p>
+
+			<table class="table-introduction">
+				<tr>
+					<th scope="row">Prerequisites:</th>
+					<td>The basics of HTML (see <a href="#">Introduction to HTML</a>).</td>
+				</tr>
+				<tr>
+					<th scope="row">Objective:</th>
+					<td>To gain basic familiarity with HTML tables.</td>
+				</tr>
+			</table>
+
+			<h2>What is a table?</h2>
+
+			<p>A table is a structured set of data made up of rows and columns (<strong>tabular data</strong>). A table allows you to
+				quickly and
+				easily look up values that indicate some kind of connection between different types of data, for example
+				a
+				person
+				and their age, or a day of the week, or the timetable for a local swimming pool.
+			</p>
+			<table class="table-sample">
+				<tr>
+					<th scope="col">Person</th>
+					<th scope="col">Age</th>
+				</tr>
+				<tr>
+					<td>John</td>
+					<td>23</td>
+				</tr>
+				<tr>
+					<td>Sam</td>
+					<td>32</td>
+				</tr>
+				<tr>
+					<td>Sarah</td>
+					<td>48</td>
+				</tr>
+				<tr>
+					<td>Sarah</td>
+					<td>48</td>
+				</tr>
+			</table>
+		</main>
+	</div>
+</body>
+
+</html>

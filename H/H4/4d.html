@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            padding: 7px 5px;
+        }
+        .t1 {
+            border: 1px solid grey;
+            border-collapse: collapse;
+            text-align: left;
+        }
+        th, td {
+            padding: 10px 20px;
+        }
+        .t2 tbody {
+            border-top: black 1px solid;
+        }
+        .t2 thead{
+            border-bottom: black 1px solid;
+            background-color: #bec0bf;
+        }
+        table.t2 {
+            font-size: 130%;
+            margin-left: 45px;
+            width: 420px;
+            border-collapse: collapse; 
+            border: solid 1px #a8a8a8;
+        }
+       .t2 td, .t2 th {
+            border: 1px #a8a8a8 solid;
+        }
+        .t2 td {
+            text-align: right;
+        }
+        .t2 th {
+            text-align: left;
+        }
+        table.t2 > tbody > tr > th {
+            background-color: gainsboro;
+            border-right-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML table basics</h1>
+    <p><button><a href="/en-US/docs/Learn/HTML/Tables"><strong>Overview: Tables</strong></a></button></p>
+    <p>
+        This article gets you started with HTML tables, covering the very basics such<br>
+        as rows, cells, headings, making cells span multiple columns and rows, and how<br>
+        to group together all the cells in a column for styling purposes.
+    </p>
+    <table class="t1">
+        <tr class="t1">
+            <th class="t1">Prerequisites:</th>
+            <td class="t1">The basics of HTML (see <a href="/en-US/docs/Learn/HTML/Introduction_to_HTML">Introduction to HTML</a>).</td>
+        </tr>
+        <tr class="t1">
+            <th class="t1">Objective:</th>
+            <td class="t1">To gain basic familiarity with HTML tables.</td>
+        </tr>	
+    </table>
+    <h2>What is a table?</h2>
+    <p>
+        A table is a structured set of data made up of rows and columns <strong>(tabular data).</strong><br>
+        A table allows you to quickly and easily look up values that indicate some kind<br>
+         of connection between different types of data, for example a person and their<br>
+          age, or a day of the week, or the timetable for a local swimming pool.
+    </p>
+    <table class="t2">
+        <thead>
+            <tr>
+                <th>Person</th>
+                <th>Age</th>
+            </tr>    
+        </thead>
+        <tbody>
+            <tr>
+                <th>Chris</th>
+                <td>38</td>
+            </tr>    
+            <tr>
+                <th>Dennis</th>
+                <td>45</td>
+            </tr>     
+            <tr>
+                <th>Sarah</th>
+                <td>29</td>
+            </tr>    
+            <tr>
+                <th>Karen</th>
+                <td>47</td>
+            </tr>
+        </tbody>    
+    </table>
+</body>
+</html>
