@@ -7,9 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MAKET_FLEXBOX</title>
     <style>
-        
-
-        
         body {
             font-family: sans-serif;
         }
@@ -59,18 +56,29 @@
         }
 
         main {
-            display: flex; 
-        }
-        @media screen and (max-width: 600px) {
-            main {
             display: flex;
-            flex-direction: column;
-            }  
+        }
+
+        @media all and (max-width: 600px) {
+            main {
+                flex-direction: column;
+            }
+
             .menu ul li {
                 display: inline-block;
             }
+
             h2 {
                 text-align: center;
+            }
+
+            .menu {
+                flex: 0 0 150px;
+            }
+
+            .football-image {
+                padding: 0px 20px 10px 0px;
+                width: 100%;
             }
         }
     </style>
