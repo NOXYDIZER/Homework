@@ -3,5 +3,4 @@ L
 git_test
 firstpage
 noiceland
-H/
-*.zip
+H/**/*.zip
