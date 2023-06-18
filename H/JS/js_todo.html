@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .todo {
+            max-width: 600px;
+            padding: 30px;
+            margin: 0 auto;
+            border: 1px solid black;
+        }
+
+        .selected__item {
+            background-color: #ccc;
+        }
+    </style>
+    <script>
+        window.addEventListener("DOMContentLoaded", function () {
+            let btn = document.querySelector(".todo__controls button");
+            btn.addEventListener("click", function () {
+                let input = document.querySelector(".todo__controls input");
+                let inputValue = input.value.trim();
+                if (!inputValue) {
+                    input.focus();
+                    return;
+                }
+                input.value = "";
+                let ul = document.querySelector(".todo__list ul");
+                let newItem = document.createElement("li");
+                newItem.textContent = inputValue;
+                newItem.addEventListener("click", function () {
+                    let allItems = ul.querySelectorAll("li");
+                    allItems.forEach(function(item) {
+                        item.classList.remove("selected__item");
+                    });
+                    newItem.classList.add("selected__item");
+                });
+                newItem.addEventListener("dblclick", function(){
+                    if (confirm(`Удалить ${inputValue}?`)) {
+                        newItem.remove();
+                    }
+                })
+                ul.appendChild(newItem);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="todo">
+        <div class="todo__controls">
+            <input type="text" name="name" placeholder="Введите название дела">
+            <button>Добавить</button>
+        </div>
+        <div class="todo__list">
+            <ul>
+
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
